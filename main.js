@@ -4,7 +4,8 @@ let passwordMessage = errorMessage[1];
 
 
 
-document.querySelector('.form__button').addEventListener('click', ()=>{
+document.querySelector('.form__button').addEventListener('click', (e)=>{
+    e.preventDefault();
     let input = document.querySelectorAll('.form__input');
 
     if(input[0].value === ''){
